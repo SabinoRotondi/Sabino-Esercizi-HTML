@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+	<form action="form.html" method="POST">
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required/>
+		<br>
+			<label for="psw">Password</label>
+			<input type="password" id="psw" name="psw" required/>
+		<br>
+			<label for="nome">Nome e cognome</label>
+			<input type="text" id="nome" name="nome" required/>
+		<br>
+			<label for="data-nascita">Data di nascita</label>
+			<input type="date" id="data-nascita" name="data-nascita" required/>
+		<br>
+			<label for="telefono">Telefono</label>
+			<input type="tel" id="telefono" name="telefono" required/>
+		<br>
+			<label for="abbonamento">Piano di abbonamento (mensile)</label>
+			<select id="abbonamento" name="piano">
+				<option value="gratis">Gratuito</option>
+				<optgroup label="pagamento">
+					<option value="5">5€</option>
+					<option value="10">10€</option>
+					<option value="20">20€</option>
+				</optgroup>
+			</select>
+		<br>
+			<label for="pro">Vantaggi PRO(+5€)</label>
+			<input id="pro" name="pro" type="checkbox"/>
+		<br>
+			<label for="numero-carta">Numero Carta (senza spazi)</label>
+			<input id="numero-carta" name="numero-carta" type="text" required/>
+		<br>
+			<label for="scadenza">Scadenza</label>
+			<input id="scadenza" name="scadenza" type="date" required/>
+		<br>
+			<label for="cvc">CVC</label>
+			<input id="cvc" name="cvc" type="text" required/>
+		<br>
+			<label for="indirizzo">Indirizzo di fatturazione</label>
+			<input type="text" id="indirizzo" name="indirizzo" required/>
+		<button type="submit">Registrati</button>
+	</form>
+</body>
+
+</html>
